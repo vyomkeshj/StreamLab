@@ -1,0 +1,13 @@
+{
+  "manifestVersion": 1,
+  "id": "stopwatch",
+  "name": "Stopwatch",
+  "version": "0.1.0",
+  "description": "A stopwatch whose clock runs on the server. Start kicks a durable task that publishes an authoritative tick every second over realtime; Stop is an event that task waits for. Every run is recorded on the timeline, with how long start and stop took end to end.",
+  "applicationType": "plugin_stopwatch",
+  "entry": "app",
+  "icon": "Timer",
+  "kickableTasks": ["tick"],
+  "ops": ["read-state"],
+  "routes": ["ticks"]
+}
